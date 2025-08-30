@@ -19,7 +19,7 @@ The analysis was performed using SQL, following a structured, step-by-step proce
     * Assessing well pollution and water quality across the region.
 3.  **Creating a Final Project Plan:** The final stage involved creating a professional `Project_progress` table, which serves as a prioritized backlog for engineers. This table includes specific improvement suggestions for each location.
 
-All SQL queries used in this analysis can be found in the [SQL_Scripts/maji_ndogo_analysis.sql](https://github.com/YourUsername/Maji_Ndogo_Water_Crisis/blob/main/SQL_Scripts/maji_ndogo_analysis.sql) file.
+All SQL queries used in this analysis can be found in the [SQL_Scripts/maji_ndogo_analysis.sql](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/blob/main/SQL_Scripts/maji_ndogo_analysis.sql) file.
 
 ## Key Insights & Results
 
