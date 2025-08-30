@@ -19,17 +19,25 @@ The analysis was performed using SQL, following a structured, step-by-step proce
     * Assessing well pollution and water quality across the region.
 3.  **Creating a Final Project Plan:** The final stage involved creating a professional `Project_progress` table, which serves as a prioritized backlog for engineers. This table includes specific improvement suggestions for each location.
 
-All SQL queries used in this analysis can be found in the [SQL_Scripts/maji_ndogo_analysis.sql](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/blob/main/SQL_Scripts/maji_ndogo_analysis.sql) file.
+All SQL queries used in this analysis can be found in the **[maji_ndogo_analysis.sql](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/blob/main/SQL_Scripts/maji_ndogo_analysis.sql)** file.
+
+## How to Replicate This Project
+
+To run this project on your own machine, you can use the provided database schema.
+
+1.  Clone this repository to your local machine.
+2.  Import the schema by running the `maji_ndogo_schema.sql` script in your MySQL client. This will create the database and tables.
+3.  Once the tables are created, you can execute the queries in `maji_ndogo_analysis.sql` to see the full analysis and results.
 
 ## Key Insights & Results
 
 Through this analysis, I delivered a comprehensive project plan that directly addresses the water crisis. The key deliverables included:
 
-* **A Final, Actionable Table:** A cleaned and validated dataset of over **25,000 records**, ready for implementation by the engineering teams.
+* **A Final, Actionable Table:** A cleaned and validated dataset of over **25,000 records**, ready for implementation by the engineering teams. A snapshot can be seen in the [final_project_snapshot.csv](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/blob/main/Data/final_project_snapshot.csv) file.
 * **Targeted Improvements:** The plan specifically identified locations that needed improvements, such as drilling new wells for river-dependent communities, installing new taps at high-traffic shared sources, and implementing water purification systems (UV/RO filters) for contaminated wells.
 * **Operational Efficiency:** The analysis also identified operational issues, such as poor-performing field surveyors and corrupt data entries, which provided a holistic view of the problem.
 
-A snapshot of the final, clean dataset and the key queries can be seen in the [Data](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/tree/main/Data) and [Screenshots](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/tree/main/Screenshots) folders.
+Screenshots of key queries and the final output can be seen in the **[Screenshots](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/tree/main/Screenshots)** folder.
 
 ## Skills & Tools
 
