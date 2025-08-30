@@ -29,7 +29,7 @@ Through this analysis, I delivered a comprehensive project plan that directly ad
 * **Targeted Improvements:** The plan specifically identified locations that needed improvements, such as drilling new wells for river-dependent communities, installing new taps at high-traffic shared sources, and implementing water purification systems (UV/RO filters) for contaminated wells.
 * **Operational Efficiency:** The analysis also identified operational issues, such as poor-performing field surveyors and corrupt data entries, which provided a holistic view of the problem.
 
-A snapshot of the final, clean dataset and the key queries can be seen in the [Data](https://github.com/YourUsername/Maji_Ndogo_Water_Crisis/tree/main/Data) and [Screenshots](https://github.com/YourUsername/Maji_Ndogo_Water_Crisis/tree/main/Screenshots) folders.
+A snapshot of the final, clean dataset and the key queries can be seen in the [Data](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/tree/main/Data) and [Screenshots](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/tree/main/Screenshots) folders.
 
 ## Skills & Tools
 
