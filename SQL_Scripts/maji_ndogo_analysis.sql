@@ -3,12 +3,10 @@ use md_water_services;
 -- ----------------------------------------------------
 -- Part 1: Initial Data Exploration and Cleaning
 -- ----------------------------------------------------
--- First, let's get to know our data by looking at the tables.
--- A good data analyst would use SHOW TABLES to see all tables in the database.
+
 SHOW TABLES;
 
--- Next, we'll examine the first few rows of each table to understand their structure and content.
--- This helps us understand what information is available.
+
 select * from employee limit 10;
 select * from visits limit 10;
 select * from water_source limit 10;
@@ -29,13 +27,10 @@ select * from water_source order by number_of_people_served DESC;
 -- Assess the quality of water sources.
 select * from water_quality where subjective_quality_score = 10 and visit_count = 2;
 
--- Task 5: Investigate and correct pollution issues
--- Finding inconsistencies in the `well_pollution` table.
+-- Investigate and correct pollution issues
 select * from well_pollution where results = 'Clean' and biological > 0.01;
 select * from well_pollution where biological > 0.01 and description like '%Clean%';
 
--- Correcting corrupt data in the `well_pollution` table.
--- Using `UPDATE` to correct descriptions and results.
 UPDATE well_pollution
 SET description = 'Bacteria: E. coli'
 WHERE description = 'Clean Bacteria: E. coli';
@@ -48,7 +43,6 @@ UPDATE well_pollution
 SET results = 'Contaminated: Biological'
 WHERE biological > 0.01 AND results = 'Clean';
 
--- More specific searches for pollution.
 SELECT * FROM well_pollution
 WHERE description LIKE 'Clean_%' OR results = 'Clean' AND biological < 0.01;
 
@@ -61,13 +55,12 @@ OR (results = 'Clean' AND biological > 0.01);
 -- ----------------------------------------------------
 -- Part 2: Integrated Analysis
 -- ----------------------------------------------------
--- Honouring the workers: Analyzing employee performance.
+-- Analyzing employee performance.
 -- Find the two worst-performing employees who visited the fewest sites.
 select assigned_employee_id, count(distinct location_id) as unique_sites_visited from visits where location_id is not null group by assigned_employee_id order by unique_sites_visited;
 select employee_name from employee where assigned_employee_id IN (20,22);
 
 -- Investigate potential corruption based on the audit.
--- (This query is based on the screenshot provided)
 SELECT
     a.employee_name,
     COUNT(v.record_id) AS number_of_visits,
@@ -108,7 +101,6 @@ SELECT
     ROUND(AVG(CASE WHEN DAYNAME(time_of_record) = 'Sunday' THEN time_in_queue ELSE NULL END), 0) AS Sunday,
     -- Monday
     ROUND(AVG(CASE WHEN DAYNAME(time_of_record) = 'Monday' THEN time_in_queue ELSE NULL END), 0) AS Monday
-    -- (The rest of the days can be added here)
 FROM
     visits
 WHERE
@@ -118,7 +110,6 @@ GROUP BY
 ORDER BY
     hour_of_day;
 
--- More employee-related queries.
 SELECT *
 FROM employee
 WHERE position = 'Civil Engineer' AND (province_name = 'Dahabu' OR address LIKE '%Avenue%');
@@ -217,7 +208,7 @@ Improvement VARCHAR(50), -- What the engineers should do at that place
 Source_status VARCHAR(50) DEFAULT 'Backlog' CHECK (Source_status IN ('Backlog', 'In progress', 'Complete')),
 /* Source_status -- We want to limit the type of information engineers can give us, so we
 limit Source_status.
-- By DEFAULT all projects are in the "Backlog" which is like a TODO list.
+- By DEFAULT all projects are in the "Backlog" 
 - CHECK() ensures only those three options will be accepted. This helps to maintain clean data.
 */
 Date_of_completion DATE, -- Engineers will add this the day the source has been upgraded.
@@ -287,7 +278,6 @@ ORDER BY
     project_progress.Province DESC, water_source.number_of_people_served DESC;
 
 -- Export the final results to a CSV file.
--- (Note: This is an example of a query to export data)
 SELECT
 project_progress.Project_id,
 project_progress.Town,
