@@ -54,7 +54,7 @@ This phase utilized **Power BI** to visually expose the human and operational im
 
 This final phase established the **National Public Dashboard**, incorporating advanced **Power BI features** (Multi-Star Schema, DAX) to monitor project progress, budget status, and improvements in basic water access.
 
-** Published Dashboard Link (Public Dashboard):**  
+**Published Dashboard Link (Public Dashboard):**  
 [View National Water Survey Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZGFlZDQzNjMtYTk1Yi0wMzRkLWE2N2MtMGZmOTY1MjkxYmFjIiwidCI6ImE0NGQ1YWZhLTJmMDUtNGRmYi05ODJjLTUwZWRkMDM5YTdhMSJ9)
 
 #### **Metrics and Features**
@@ -81,5 +81,29 @@ This final phase established the **National Public Dashboard**, incorporating ad
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
+
+Maji-Ndogo-Water-Crisis/
+├── Data/
+│   └── final_project_snapshot.csv
+│
+├── SQL_Scripts/
+│   ├── maji_ndogo_analysis.sql
+│   └── maji_ndogo_schema.sql
+│
+├── PowerBI_Assets/
+│   ├── Md_water_services_data.xlsx          # Primary Excel data file for Power BI visualizations
+│   ├── Maji Ndogo Initial EDA visualizations.pbix
+│   ├── Maji Ndogo National Water survey results.pbix
+│   ├── MD_Provinces.json                    # Custom map file for provinces
+│   └── MD_Full_map.json                     # Custom map file for towns and rural areas
+│
+├── Screenshots/
+│   ├── EDA visualization schema.png         # Screenshot illustrating the Power BI multi-star data model
+│   ├── Final suggestion query screenshot.png
+│   ├── corrupt employees query screenshot.png
+│   └── least performing employees query screenshot.png
+│
+├── LICENSE
+└── README.md
 
