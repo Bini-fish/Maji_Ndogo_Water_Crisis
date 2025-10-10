@@ -81,29 +81,4 @@ This final phase established the **National Public Dashboard**, incorporating ad
 
 ---
 
-##  Repository Structure
-
-Maji-Ndogo-Water-Crisis/
-├── Data/
-│   └── final_project_snapshot.csv
-│
-├── SQL_Scripts/
-│   ├── maji_ndogo_analysis.sql
-│   └── maji_ndogo_schema.sql
-│
-├── PowerBI_Assets/
-│   ├── Md_water_services_data.xlsx          # Primary Excel data file for Power BI visualizations
-│   ├── Maji Ndogo Initial EDA visualizations.pbix
-│   ├── Maji Ndogo National Water survey results.pbix
-│   ├── MD_Provinces.json                    # Custom map file for provinces
-│   └── MD_Full_map.json                     # Custom map file for towns and rural areas
-│
-├── Screenshots/
-│   ├── EDA visualization schema.png         # Screenshot illustrating the Power BI multi-star data model
-│   ├── Final suggestion query screenshot.png
-│   ├── corrupt employees query screenshot.png
-│   └── least performing employees query screenshot.png
-│
-├── LICENSE
-└── README.md
 
