@@ -1,47 +1,85 @@
-# Data-Driven Solutions for a Water Crisis: An SQL Analysis
+# Maji Ndogo Water Crisis: End-to-End Data Analysis and Public Reporting
 
-## Project Overview
+This repository documents a comprehensive data analysis project aimed at addressing the severe water access crisis in the fictional region of **Maji Ndogo**.  
 
-This project focuses on a complete data analysis workflow, from raw data to actionable insights, to solve a real-world water crisis in the fictional Maji Ndogo region. Using advanced SQL, I transformed a massive, messy dataset of over 60,000 records into a clear, prioritized project plan to help engineers improve water access for communities in need.
+The workflow spans from advanced **SQL data transformation and prioritization** to building a robust **Power BI multi-star data model** and deploying **transparent, interactive dashboards** for government executives, provincial leaders, and the public.
 
-## Problem Statement
+The project's central goal was to deliver a **data-driven strategy** to President **Aziza Naledi** and provincial leaders, outlining precise **costs, locations, and actions** required to restore basic water access for Maji Ndogo's citizens.
 
-The Maji Ndogo local government needed to identify and address critical water supply issues—specifically, contaminated sources, broken infrastructure, and long queue times at shared taps. The goal was to provide a data-driven strategy to guide engineering teams, ensuring resources are allocated to the areas with the greatest need.
+---
 
-## Methodology
+## Project Phases and Deliverables
 
-The analysis was performed using SQL, following a structured, step-by-step process:
+### **Phase 1: Data Wrangling and Project Prioritization (SQL)**
 
-1.  **Data Cleaning & Exploration:** Initial queries were used to inspect the database, identify inconsistencies in data collection, and correct data quality issues.
-2.  **Integrated Analysis:** I used `JOIN`s, `CASE` statements, and `GROUP BY` to analyze key areas, including:
-    * Identifying corrupt data entries and employee performance issues.
-    * Analyzing queue times at shared taps to determine where new taps are needed.
-    * Assessing well pollution and water quality across the region.
-3.  **Creating a Final Project Plan:** The final stage involved creating a professional `Project_progress` table, which serves as a prioritized backlog for engineers. This table includes specific improvement suggestions for each location.
+The foundational phase involved processing a massive dataset (over **60,000 records**) to identify crucial issues—contaminated sources, broken infrastructure, and long queue times—and generating an actionable list of improvements.
 
-All SQL queries used in this analysis can be found in the **[maji_ndogo_analysis.sql](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/blob/main/SQL_Scripts/maji_ndogo_analysis.sql)** file.
+#### **Activities & Deliverables**
 
-## How to Replicate This Project
+| Activity | Description |
+|-----------|-------------|
+| **Cleaning & Transformation** | Used advanced SQL (MySQL) to inspect, clean, and correct data inconsistencies, including corrupt entries and low-performing field surveyor records. |
+| **Integrated Analysis** | Analyzed queue times, assessed well pollution, and determined optimal locations for intervention based on need. |
+| **Deliverable** | Creation of a prioritized `Project_progress` table, serving as the official improvement backlog for engineering teams (**over 25,000 records**). |
 
-To run this project on your own machine, you can use the provided database schema.
+#### **File Paths (SQL)**
 
-1.  Clone this repository to your local machine.
-2.  Import the schema by running the `maji_ndogo_schema.sql` script in your MySQL client. This will create the database and tables.
-3.  Once the tables are created, you can execute the queries in `maji_ndogo_analysis.sql` to see the full analysis and results.
+| File/Folder | Description |
+|--------------|-------------|
+| `SQL_Scripts/maji_ndogo_schema.sql` | SQL script used to create the initial database structure and tables. |
+| `SQL_Scripts/maji_ndogo_analysis.sql` | Contains all cleaning, transformation, and final prioritization SQL queries. |
+| `Data/final_project_snapshot.csv` | A snapshot of the final, cleaned, and prioritized action table. |
 
-## Key Insights & Results
+---
 
-Through this analysis, I delivered a comprehensive project plan that directly addresses the water crisis. The key deliverables included:
+### **Phase 2: Exploratory Data Analysis (EDA) and Core Insights**
 
-* **A Final, Actionable Table:** A cleaned and validated dataset of over **25,000 records**, ready for implementation by the engineering teams. A snapshot can be seen in the [final_project_snapshot.csv](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/blob/main/Data/final_project_snapshot.csv) file.
-* **Targeted Improvements:** The plan specifically identified locations that needed improvements, such as drilling new wells for river-dependent communities, installing new taps at high-traffic shared sources, and implementing water purification systems (UV/RO filters) for contaminated wells.
-* **Operational Efficiency:** The analysis also identified operational issues, such as poor-performing field surveyors and corrupt data entries, which provided a holistic view of the problem.
+This phase utilized **Power BI** to visually expose the human and operational impacts of the water crisis—focusing particularly on **queue dynamics, gender disparity, and associated safety risks**.
 
-Screenshots of key queries and the final output can be seen in the **[Screenshots](https://github.com/Bini-fish/Maji_Ndogo_Water_Crisis/tree/main/Screenshots)** folder.
+** Published Dashboard Link:**  
+[View Initial EDA Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDBiZTA2ZmMtZWQ2ZS00NTUwLTliMmUtNzhkZGYzYzljMzU0IiwidCI6ImE0NGQ1YWZhLTJmMDUtNGRmYi05ODJjLTUwZWRkMDM5YTdhMSJ9)
 
-## Skills & Tools
+#### **Key Insights**
 
-* **SQL (MySQL):** Used for all data cleaning, transformation, and analysis.
-* **Data Cleaning:** Handling inconsistent data, correcting values, and ensuring data integrity.
-* **Data Modeling:** Creating a new table (`Project_progress`) to structure and present the final deliverables.
-* **Data Analysis:** Using queries to answer complex business questions and uncover hidden patterns.
+| Insight Category | Key Findings |
+|------------------|--------------|
+| **Water Access & Queues** | 43% of the population uses shared taps. Average queue times exceed **120 minutes**. Queues are longest on **Saturdays and Sundays**. |
+| **Queue Timing** | Queues peak during **early mornings (before 9:00)** and **evenings (past 18:00)** during weekdays. |
+| **Gender Disparity** | Females dominate the queue composition nationally. Male participation doubles on weekends (from ~21% on weekdays to 40% on weekends). |
+| **Safety Crisis** | 64% of crime victims are female. The top three crimes are **harassment**, **theft**, and **sexual assault**, concentrated during peak queuing hours. |
+
+---
+
+### **Phase 3: Public Reporting and Financial Tracking**
+
+This final phase established the **National Public Dashboard**, incorporating advanced **Power BI features** (Multi-Star Schema, DAX) to monitor project progress, budget status, and improvements in basic water access.
+
+** Published Dashboard Link (Public Dashboard):**  
+[View National Water Survey Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZGFlZDQzNjMtYTk1Yi0wMzRkLWE2N2MtMGZmOTY1MjkxYmFjIiwidCI6ImE0NGQ1YWZhLTJmMDUtNGRmYi05ODJjLTUwZWRkMDM5YTdhMSJ9)
+
+#### **Metrics and Features**
+
+| Metric / Feature | Description |
+|------------------|-------------|
+| **Total Budget** | Displays the overall cost required to complete all planned water infrastructure upgrades. |
+| **Basic Water Access** | DAX measure classifying sources as "Basic" if they meet UN standards (e.g., wells must be clean; public taps must have queue times < 30 minutes). |
+| **Budget Tracking (KPI)** | Measures actual spending (`cumulative_cost`) against projected budget (`cumulative_budget`), revealing a project running **~10% over budget** nationally after one year. |
+| **Cost Allocation** | Outlines the number of improvements in each province and the financial budget allocation per water source. |
+| **Efficiency Insight** | Vendor performance analysis showed cost efficiency was driven by travel logistics; local vendors (e.g., *Entebbe RO Installers - ERI893*) completed more projects efficiently. |
+
+---
+
+##  Technical Skills & Tools
+
+| Category | Tools / Skills | Context in Project |
+|-----------|----------------|--------------------|
+| **Data Engineering** | SQL (MySQL), Data Cleaning, ETL | Used for initial data integration, cleaning, and creating the core `Project_progress` backlog. |
+| **Business Intelligence** | Power BI Desktop, Power BI Service | Dashboard creation, visual design, and report publishing. |
+| **Data Modeling** | Multi-Star Schema, Relationship Management | Designed a flexible model with multiple fact tables (e.g., visits and water_source_related_crime). |
+| **Advanced Calculation** | DAX (Data Analysis Expressions) | Implemented measures for calculating `Basic_water_access`, cumulative tracking, and completion rates. |
+| **Visualization** | Custom Maps (JSON), KPI Visuals | Created custom shape maps (`MD_Provinces.json`, `MD_Full_map.json`) and KPI visuals for financial monitoring. |
+
+---
+
+## 📁 Repository Structure
+
