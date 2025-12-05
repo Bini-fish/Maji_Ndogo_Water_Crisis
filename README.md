@@ -55,7 +55,7 @@ This phase utilized **Power BI** to visually expose the human and operational im
 This final phase established the **National Public Dashboard**, incorporating advanced **Power BI features** (Multi-Star Schema, DAX) to monitor project progress, budget status, and improvements in basic water access.
 
 **Published Dashboard Link (Public Dashboard):**  
-[View National Water Survey Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZGFlZDQzNjMtYTk1Yi0wMzRkLWE2N2MtMGZmOTY1MjkxYmFjIiwidCI6ImE0NGQ1YWZhLTJmMDUtNGRmYi05ODJjLTUwZWRkMDM5YTdhMSJ9)
+[View National Water Survey Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZGFlZDQzNjMtYTk1Yi00MzRkLWE2N2MtMGZmOTY1MjkxYmFjIiwidCI6ImE0NGQ1YWZhLTJmMDUtNGRmYi05ODJjLTUwZWRkMDM5YTdhMSJ9&embedImagePlaceholder=true)
 
 #### **Metrics and Features**
 
